@@ -1,4 +1,4 @@
-import {RocketGreen as RocketGreen} from "@/Components/GeneralComponents/RocketGreen";
+import { RocketGreen as RocketGreen } from "@/Components/GeneralComponents/RocketGreen";
 
 export default function Home() {
 
@@ -34,6 +34,10 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="absolute right-[25%] top-[20%]">
+          <RocketGreen />
+        </div>
+
         <div className='absolute font-[Orbit] z-[10] rounded-[5px] flex top-28 bottom-28 right-40 left-40 blure bg-gradient-to-tr from-[#02010874] to-[#12093074]'>
 
           <div className='flex flex-row w-full h-[100%] justify-between '>
@@ -54,10 +58,10 @@ export default function Home() {
             <div className='w-6/12 flex flex-col justify-center h-[100%] pt-10 items-center'>
 
               <div className='h-[70%] flex flex-row justify-around w-8/12 mx-auto'>
-                <div className="w-3/12 h-[90%]">
+                {/* <div className="w-3/12 h-[90%]">
                   <RocketGreen/>
-                </div>
-               
+                </div> */}
+
               </div>
 
               <div className='h-[30%]  flex flex-row justify-around w-8/12 mx-auto'>
