@@ -1,9 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Header from '@/Components/GeneralComponents/Header'
-import wall from '../../public/images/wall.webp';
-import SlideShow from '@/Components/GeneralComponents/SlideShow';
-
+import {RocketGreen as RocketGreen} from "@/Components/GeneralComponents/RocketGreen";
 
 export default function Home() {
 
@@ -11,7 +6,6 @@ export default function Home() {
 
     <>
       <div className='h-screen relative '>
-
         <div className="container">
           <div className="sky">
             <div className="stars"></div>
@@ -57,10 +51,39 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='w-6/12 flex justify-center pt-10 items-center'>
-              <div className='bg-gradient-to-br from-[#1a1a80ca] to-[#31318bc8] rounded-lg boxShadowLight  h-[90%] mb-10 w-6/12'>
+            <div className='w-6/12 flex flex-col justify-center h-[100%] pt-10 items-center'>
 
+              <div className='h-[70%] flex flex-row justify-around w-8/12 mx-auto'>
+                <div className="w-3/12 h-[90%]">
+                  <RocketGreen/>
+                </div>
+               
               </div>
+
+              <div className='h-[30%]  flex flex-row justify-around w-8/12 mx-auto'>
+                <div className='flex flex-col w-3/12'>
+                  <button className="btn-class-name outline outline-8 mx-auto outline-[#38156a] boxShadowLight">
+                    <span className="back  bg-gradient-to-r from-[#36166a]  to-[#16196b]"></span>
+                    <span className="front bg-gradient-to-r from-[#8647eb]  to-[#5d1995]"></span>
+                  </button>
+                  <p className='text-center text-[1rem] mt-8 tracking-wider'>Skills</p>
+                </div>
+                <div className='flex flex-col w-3/12'>
+                  <button className="btn-class-name outline outline-8 mx-auto outline-[#15196a] boxShadowLight">
+                    <span className="back  bg-gradient-to-r from-[#164d6a]  to-[#16456b]"></span>
+                    <span className="front bg-gradient-to-r from-[#3795e3]  to-[#284ea7]"></span>
+                  </button>
+                  <p className='text-center text-[1rem] mt-8 tracking-wider'>Experience</p>
+                </div>
+                <div className='flex flex-col w-3/12'>
+                  <button className="btn-class-name outline outline-8 mx-auto outline-[#156a5d] boxShadowLight">
+                    <span className="back  bg-gradient-to-r from-[#164f46]  to-[#0e3e37]"></span>
+                    <span className="front bg-gradient-to-r from-[#3bc2ae]  to-[#115e52]"></span>
+                  </button>
+                  <p className='text-center text-[1rem] mt-8 tracking-wider'>About Me</p>
+                </div>
+              </div>
+
             </div>
 
           </div>
@@ -118,6 +141,9 @@ export default function Home() {
 
       </div>
 
+
+
+      {/* //////////// Footer //////////////*/}
 
 
     </>
