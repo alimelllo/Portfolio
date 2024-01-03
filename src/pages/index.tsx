@@ -1,4 +1,3 @@
-import { RocketGreen as RocketGreen } from "@/Components/GeneralComponents/RocketGreen";
 import Image from "next/image";
 import rocket from '../../public/images/rocket.gif'
 
@@ -37,7 +36,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute w-4/12 flex justify-center items-center right-[13%] md:right-[30%] top-[20%] md:top-[45%]">
+        <div className="absolute w-4/12 md:w-3/12 flex justify-center items-center right-[13%] md:right-[35%] top-[20%] md:top-[50%]">
           <Image className="initialRocketLand rotate-[-35deg]" width={200} height={300} src={rocket} alt={'rocket'} />
         </div>
 
@@ -45,9 +44,9 @@ export default function Home() {
 
           <div className='flex flex-row md:flex-col w-full h-[100%] justify-between '>
             <div className='w-6/12 md:w-full h-[100%] flex flex-col pt-10 md:pt-5 pl-[5rem] md:pl-0'>
-              <p className='text-[2.5rem] md:text-[2rem] md:pr-5 h-[15%] md:text-right'>Ali Maleki</p>
-              <p className='text-[1.25rem] md:text-[1rem] md:pr-5 md:text-right h-[15%] tracking-wider text-[#a6a6a6cf]'>Front End Developer</p>
-              <p className='text-[1rem] md:text-[0.8rem] md:p-5 h-[50%]items-start tracking-wider mt-[4rem] md:mt-0 flex flex-wrap text-justify text-[#cecece]'>
+              <p className='text-[2.5rem] md:text-[2rem] md:pr-5 h-[15%] md:text-center'>Ali Maleki</p>
+              <p className='text-[1.25rem] md:text-[1rem] md:pr-5 md:text-center h-[15%] tracking-wider text-[#a6a6a6cf] md:pl-8'>Front End Developer</p>
+              <p className='text-[1rem] md:text-[0.7rem] md:p-5 h-[50%]items-start tracking-wider mt-[4rem] md:mt-0 flex flex-wrap text-justify text-[#cecece]'>
                 I am 24 years old focusing on javascript & Front End development.
                 I've got 3 years of experience collaborating with team work on-site and remotely.
                 I like creating mangeable complex ui and large scale applications using React And its combination with TypeScript.
