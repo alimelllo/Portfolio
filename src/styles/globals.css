@@ -2380,7 +2380,7 @@ body {
   }
 
   50% {
-    transform: translateX(230vw) rotate(-50deg) translateY(-280vw);
+    transform: translateX(230vw) rotate(-50deg) translateY(-300vw);
     scale: 0.6;
   }
 
@@ -2397,7 +2397,7 @@ body {
 
 @media screen and (max-width: 860px) {
   body {
-    background-image: linear-gradient(to top left, #02010883 20%, #12093084);
+    background: linear-gradient(to bottom, #201b46 0%, #020107 100%);
   }
   .initialRocketLand {
     animation: linear initialRocketMobile 8s forwards;
