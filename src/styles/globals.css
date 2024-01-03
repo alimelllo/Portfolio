@@ -70,6 +70,7 @@ body {
   height: 100%;
   /* background: linear-gradient(to bottom, #201b46 0%, #020107 100%); */
 }
+
 .container .text {
   color: #fff;
   position: absolute;
@@ -528,6 +529,7 @@ body {
     756px 2269px #fff, 1060px 963px #fff, 2533px 2352px #fff;
   animation: animStar 100s linear infinite;
 }
+
 .stars:after {
   content: " ";
   top: -600px;
@@ -1165,6 +1167,7 @@ body {
     585px 1683px #fff;
   animation: animStar 125s linear infinite;
 }
+
 .stars1:after {
   content: " ";
   top: -600px;
@@ -1415,6 +1418,7 @@ body {
     977px 2511px #fff;
   animation: animStar 175s linear infinite;
 }
+
 .stars2:after {
   content: " ";
   top: -600px;
@@ -1520,16 +1524,19 @@ body {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(-2560px) translateX(-2560px);
   }
 }
+
 @keyframes animShootingStar {
   from {
     transform: translateY(0px) translateX(0px) rotate(-45deg);
     opacity: 1;
     height: 5px;
   }
+
   to {
     transform: translateY(-2560px) translateX(-2560px) rotate(-45deg);
     opacity: 1;
@@ -1569,6 +1576,7 @@ body {
   left: -1px;
   animation: flag-pole 12s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
 }
+
 .space .mars .flag:before {
   content: "";
   position: absolute;
@@ -1576,6 +1584,7 @@ body {
   width: 2px;
   background: #eee;
 }
+
 .space .mars .flag:after {
   content: "";
   position: absolute;
@@ -1598,6 +1607,7 @@ body {
   margin-top: -60px;
   z-index: 2;
 }
+
 .space .mars .planet .surface {
   position: absolute;
   border-radius: 100%;
@@ -1609,6 +1619,7 @@ body {
   border: 30px solid rgba(0, 0, 0, 0.15);
   background: #ff5f40;
 }
+
 .space .mars .planet .crater1,
 .space .mars .planet .crater2,
 .space .mars .planet .crater3 {
@@ -1617,12 +1628,14 @@ body {
   background: rgba(0, 0, 0, 0.15);
   box-shadow: inset 3px 3px 0 rgba(0, 0, 0, 0.2);
 }
+
 .space .mars .planet .crater1 {
   height: 20px;
   width: 20px;
   top: 32%;
   left: 17%;
 }
+
 .space .mars .planet .crater2 {
   height: 10px;
   width: 10px;
@@ -1630,6 +1643,7 @@ body {
   left: 55%;
   box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
+
 .space .mars .planet .crater3 {
   height: 10px;
   width: 10px;
@@ -1637,6 +1651,7 @@ body {
   left: 40%;
   box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
+
 .space .ship {
   position: absolute;
   right: 50%;
@@ -1649,12 +1664,14 @@ body {
   z-index: 1;
   animation: ship 12s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
 }
+
 .space .ship .ship-rotate {
   position: absolute;
   height: 22px;
   transform: rotate(-110deg);
   animation: ship-rotate 12s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
 }
+
 .space .ship .pod {
   position: absolute;
   top: 0;
@@ -1665,6 +1682,7 @@ body {
   border-radius: 100% 0 100% 0;
   transform: rotate(-45deg);
 }
+
 .space .ship .fuselage {
   position: absolute;
   top: 14px;
@@ -1674,6 +1692,7 @@ body {
   background: #eee;
   border-radius: 100% 100% 0 0;
 }
+
 .space .ship .fuselage:after {
   content: "";
   position: absolute;
@@ -1685,6 +1704,7 @@ body {
   border-right: 4px solid transparent;
   border-top: 6px solid red;
 }
+
 .space .ship-shadow {
   position: absolute;
   right: 10%;
@@ -1702,12 +1722,15 @@ body {
   0% {
     transform: rotate(-60deg);
   }
+
   86% {
     transform: rotate(-60deg);
   }
+
   89% {
     transform: rotate(10deg);
   }
+
   100% {
     transform: rotate(10deg);
   }
@@ -1720,18 +1743,22 @@ body {
     margin-top: -55px;
     margin-right: -55px;
   }
+
   40% {
     right: 50%;
     top: 50%;
   }
+
   79.5% {
     margin-top: -55px;
     margin-right: -55px;
   }
+
   84% {
     margin-top: -20px;
     margin-right: 0px;
   }
+
   100% {
     right: 50%;
     top: 50%;
@@ -1739,91 +1766,116 @@ body {
     margin-right: 0px;
   }
 }
+
 @keyframes ship-rotate {
   0% {
     transform: rotate(-110deg);
   }
+
   20% {
     transform: rotate(-110deg);
   }
+
   34% {
     transform: rotate(47deg);
   }
+
   79% {
     transform: rotate(47deg);
   }
+
   100% {
     transform: rotate(47deg);
   }
 }
+
 @keyframes ship-shadow {
   0% {
     right: -10%;
     transform: scale(1.4, 1);
     opacity: 0.3;
   }
+
   40% {
     right: 50%;
     transform: scale(0.75, 1);
     opacity: 1;
   }
+
   100% {
     right: 50%;
   }
 }
+
 @keyframes planet-bump {
   0% {
     margin-left: 0;
   }
+
   39% {
     margin-left: 0;
   }
+
   40% {
     margin-left: -1px;
   }
+
   40.5% {
     margin-left: 1px;
   }
+
   41% {
     margin-left: 0;
   }
+
   100% {
     margin-left: 0;
   }
 }
+
 @keyframes flag-pole {
   0% {
     top: -57px;
   }
+
   48% {
     top: -57px;
   }
+
   54% {
     top: -77px;
   }
+
   90% {
     top: -77px;
   }
+
   92% {
     top: -57px;
   }
+
   100% {
     top: -57px;
   }
 }
+
 @keyframes flag-unfurl {
   0% {
     width: 0;
   }
+
   55% {
     width: 0;
   }
+
   60% {
     width: 14px;
   }
+
   90% {
     width: 14px;
   }
+
   100% {
     width: 14px;
   }
@@ -1839,11 +1891,13 @@ body {
   margin: auto;
   border-radius: 50%;
 }
+
 .planet_shadow {
   box-shadow: inset 0 -5px 10px rgba(22, 48, 64, 0.5),
     0 0 1.5rem rgba(170, 194, 194, 0.3);
   background-image: linear-gradient(to top left, #24b88b 20%, #21776f);
 }
+
 .planet-green {
   position: relative;
   width: 100%;
@@ -1852,6 +1906,7 @@ body {
   animation: rotate 15s linear infinite;
   overflow: hidden;
 }
+
 .planet_wraper::before,
 .planet_wraper::after {
   content: "";
@@ -1862,6 +1917,7 @@ body {
     inset 0 -0.1rem 0.1rem rgba(170, 194, 194, 0.1);
   animation: rotate 5s linear infinite;
 }
+
 .planet_wraper::before {
   top: -1.75rem;
   left: -1.75rem;
@@ -1869,43 +1925,50 @@ body {
   height: 11rem;
   animation-delay: 1s;
 }
+
 .planet_wraper::after {
   top: -2.5rem;
   left: -2.5rem;
   width: 15rem;
   height: 15rem;
 }
-.planet-green > * {
+
+.planet-green>* {
   position: relative;
   border-radius: 50%;
   background-color: #209b85;
   box-shadow: inset 1px 1px 5px #163040, 0 0 7px #63eed2;
   opacity: 0.3;
 }
+
 .crater:nth-of-type(1) {
   top: 2rem;
   left: 1.5rem;
   width: 0.75rem;
   height: 0.75rem;
 }
+
 .crater:nth-of-type(2) {
   top: -0.75rem;
   left: 5rem;
   width: 2.5rem;
   height: 2.5rem;
 }
+
 .crater:nth-of-type(3) {
   top: 0.5rem;
   left: 2rem;
   width: 1.25rem;
   height: 1.25rem;
 }
+
 .crater:nth-of-type(4) {
   top: -1.5rem;
   left: 3.5rem;
   width: 0.5rem;
   height: 0.5rem;
 }
+
 .crater:nth-of-type(5) {
   top: 1.25rem;
   left: 3.5rem;
@@ -1940,7 +2003,9 @@ body {
   align-items: center;
   transform-origin: center center;
   box-shadow: inset 2px -10px 0px rgba(0, 0, 0, 0.1);
-  animation: planet 7s ease-in infinite forwards;
+  animation: planet 40s linear infinite forwards;
+  transition: all 1s linear;
+  z-index: 1;
 }
 
 @keyframes planet {
@@ -1948,23 +2013,19 @@ body {
     transform: translateX(50vw) rotate(-45deg) translateY(-40vh);
     scale: 0.2;
   }
+
   50% {
-    /* transform: translateX(-25vw) rotate(-25deg) translateY(40vh);
-    scale: 0.6; */
     transform: translateX(-50vw) rotate(55deg) translateY(80vh);
     scale: 1;
   }
-  80% {
-    z-index: 20;
-  }
+
   100% {
-    /* transform: translateX(-45vw) rotate(55deg) translateY(80vh);
-    scale: 1; */
     transform: translateX(50vw) rotate(-45deg) translateY(-40vh);
     scale: 0.2;
-    z-index: 1;
   }
 }
+
+
 .content .planet .ring {
   position: absolute;
   width: 300px;
@@ -1979,14 +2040,17 @@ body {
     inset -5px -10px 0px rgba(0, 0, 0, 0.1);
   animation: ring 3s ease infinite;
 }
+
 @keyframes ring {
   0% {
     transform: rotateX(110deg) rotateZ(0deg) translate(-50px, 5px);
   }
+
   100% {
     transform: rotateX(110deg) rotateZ(360deg) translate(-50px, 5px);
   }
 }
+
 .content .planet .ring:before {
   content: "";
   position: absolute;
@@ -1998,6 +2062,7 @@ body {
   left: calc(0px - 5px);
   box-shadow: inset -3px 3px 0px rgba(0, 0, 0, 0.2);
 }
+
 .content .planet .ring:after {
   content: "";
   position: absolute;
@@ -2007,6 +2072,7 @@ body {
   background-color: #7ea1bf;
   box-shadow: inset 2px -10px 0px rgba(0, 0, 0, 0.1);
 }
+
 .content .planet .cover-ring {
   position: absolute;
   width: 100%;
@@ -2020,6 +2086,7 @@ body {
   z-index: 2;
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
 }
+
 .content .planet .spots {
   width: 100%;
   height: 100%;
@@ -2029,6 +2096,7 @@ body {
   position: absolute;
   z-index: 2;
 }
+
 .content .planet .spots span {
   width: 30px;
   height: 30px;
@@ -2038,54 +2106,64 @@ body {
   box-shadow: inset -2px 3px 0px rgba(0, 0, 0, 0.3);
   animation: dots 5s ease infinite alternate;
 }
+
 @keyframes dots {
   0% {
     box-shadow: inset -3px 3px 0px rgba(0, 0, 0, 0.3);
   }
+
   100% {
     box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.3);
   }
 }
+
 .content .planet .spots span:nth-child(1) {
   top: 20px;
   right: 50px;
 }
+
 .content .planet .spots span:nth-child(2) {
   top: 40px;
   left: 50px;
   width: 15px;
   height: 15px;
 }
+
 .content .planet .spots span:nth-child(3) {
   top: 80px;
   left: 20px;
   width: 25px;
   height: 25px;
 }
+
 .content .planet .spots span:nth-child(4) {
   top: 80px;
   left: 90px;
   width: 40px;
   height: 40px;
 }
+
 .content .planet .spots span:nth-child(5) {
   top: 160px;
   left: 70px;
   width: 15px;
   height: 15px;
 }
+
 .content .planet .spots span:nth-child(6) {
   top: 165px;
   left: 125px;
   width: 10px;
   height: 10px;
 }
+
 .content .planet .spots span:nth-child(7) {
   top: 90px;
   left: 150px;
   width: 15px;
   height: 15px;
 }
+
 .content p {
   color: #bacbd9;
   font-size: 14px;
@@ -2161,6 +2239,7 @@ body {
   height: 180px;
   width: 180px;
 }
+
 .animated-rocket .particles {
   position: absolute;
   top: 20px;
@@ -2168,14 +2247,17 @@ body {
   transform: scale(1.75);
   animation: shimmer 3s infinite ease-in-out;
 }
+
 .animated-rocket .flames {
   position: absolute;
   bottom: 0;
   animation: flutter 1.5s infinite ease-in-out;
 }
+
 .animated-rocket .fuselage {
   position: absolute;
 }
+
 .animated-rocket .rings {
   position: absolute;
 }
@@ -2184,83 +2266,116 @@ body {
   0% {
     transform: translate(0, 5px);
   }
+
   50% {
     transform: translate(5px, -5px);
   }
+
   100% {
     transform: translate(0px, 5px);
   }
 }
+
 @keyframes shake {
   0% {
     transform: rotate(0.5deg) scale(0.99);
   }
+
   50% {
     transform: rotate(-0.5deg) scale(1);
   }
+
   100% {
     transform: rotate(0.5deg) scale(0.99);
   }
 }
+
 @keyframes flutter {
   0% {
     opacity: 1;
     transform: scale(1);
   }
+
   20% {
     opacity: 0.6;
     transform: scale(0.92);
   }
+
   40% {
     opacity: 0.8;
     transform: scale(0.95);
   }
+
   60% {
     opacity: 0.4;
     transform: scale(0.9);
   }
+
   80% {
     opacity: 0.6;
     transform: scale(0.98);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
   }
 }
+
 @keyframes shimmer {
   0% {
     opacity: 1;
   }
+
   25% {
     opacity: 0.75;
   }
+
   50% {
     opacity: 0.9;
   }
+
   75% {
     opacity: 0.6;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-.rocketWaiting {
-  animation: rocketWaiting 10s infinite forwards;
+.initialRocketLand {
+  z-index: 12;
+  transform-style: preserve-3d;
+  animation: linear initialRocketLand 10s  forwards;
 }
 
-@keyframes rocketWaiting {
+@keyframes initialRocketLand {
   0% {
-    transform: translateX(0) rotate(0) translateY(0);
-  }
-  50%{
-    transform: translateX(-55vw) rotate(-265deg) translateY(40vh);
-  }
-  75%{
+    transform: translateX(-100vw) rotate(45deg) translateY(120vh);
     z-index: 1;
+    scale: 0.5;
   }
-  100%{
-    transform: translateX(0) rotate(-360deg) translateY(0);
+
+  50% {
+    transform: translateX(0) rotate(-20deg) translateY(-30vw);
+    scale: 0.6;
+  }
+
+  60% {
+    z-index: 12;
+  }
+
+  100% {
+    transform: translateX(0) rotate(-35deg) translateY(0);
+    z-index: 12;
+    scale: 1;
+  }
+}
+
+
+@media screen and (max-width: 860px) {
+  body {
+    background-color: lightgreen;
   }
 }
