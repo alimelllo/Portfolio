@@ -1,4 +1,3 @@
-import { RocketGreen as RocketGreen } from "@/Components/GeneralComponents/RocketGreen";
 import Image from "next/image";
 import rocket from '../../public/images/rocket.gif'
 import Atropos from "atropos/react";
@@ -38,7 +37,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute w-4/12 flex justify-center items-center right-[13%] md:right-[30%] top-[20%] md:top-[45%]">
+        <div className="absolute w-4/12 md:w-3/12 flex justify-center items-center right-[13%] md:right-[35%] top-[20%] md:top-[50%]">
           <Image className="initialRocketLand rotate-[-35deg]" width={200} height={300} src={rocket} alt={'rocket'} />
         </div>
 

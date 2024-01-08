@@ -1932,7 +1932,7 @@ body {
   height: 15rem;
 }
 
-.planet-green>* {
+.planet-green > * {
   position: relative;
   border-radius: 50%;
   background-color: #209b85;
@@ -2023,7 +2023,6 @@ body {
     scale: 0.2;
   }
 }
-
 
 .content .planet .ring {
   position: absolute;
@@ -2346,7 +2345,7 @@ body {
 .initialRocketLand {
   z-index: 12;
   transform-style: preserve-3d;
-  animation: linear initialRocketLand 10s  forwards;
+  animation: linear initialRocketLand 10s forwards;
 }
 
 @keyframes initialRocketLand {
@@ -2357,7 +2356,7 @@ body {
   }
 
   50% {
-    transform: translateX(0) rotate(-20deg) translateY(-30vw);
+    transform: translateX(0) rotate(-20deg) translateY(-35vw);
     scale: 0.6;
   }
 
@@ -2372,10 +2371,40 @@ body {
   }
 }
 
+@keyframes initialRocketMobile {
+  0% {
+    transform: translateX(-80vw) rotate(45deg) translateY(120vh);
+    z-index: 1;
+    scale: 0.5;
+  }
+
+  50% {
+    transform: translateX(230vw) rotate(-50deg) translateY(-300vw);
+    scale: 0.6;
+  }
+
+  60% {
+    z-index: 12;
+  }
+
+  100% {
+    transform: translateX(0) rotate(-35deg) translateY(0);
+    z-index: 12;
+    scale: 1;
+  }
+}
 
 @media screen and (max-width: 860px) {
   body {
-    background-color: lightgreen;
+    background: linear-gradient(to bottom, #201b46 0%, #020107 100%);
+  }
+  .initialRocketLand {
+    animation: linear initialRocketMobile 8s forwards;
+  }
+  .space {
+    scale: 0.6;
+    top: -15%;
+    left: -15%;
   }
 }
 
