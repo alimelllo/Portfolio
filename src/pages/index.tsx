@@ -77,7 +77,7 @@ export default function Home() {
 
                 </div>
 
-                <div className='h-[30%] md:h-[50%] flex flex-row justify-around w-8/12 md:w-10/12 mx-auto'>
+                <div className='h-[30%] md:h-[50%] flex flex-row justify-around w-8/12 md:w-11/12 mx-auto'>
                   <div className='flex flex-col w-3/12'>
                     <button onClick={() => SetLunchRocket(true)} className="btn-class-name outline outline-8 mx-auto outline-[#38156a] boxShadowLight">
                       <span className="back  bg-gradient-to-r from-[#36166a]  to-[#16196b]"></span>
