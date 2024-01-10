@@ -1,8 +1,14 @@
 import Image from "next/image";
 import rocket from '../../public/images/rocket.gif'
+import background from '../../public/images/background.jpg'
+
 import Atropos from "atropos/react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+
+  const [lunchRocket, SetLunchRocket] = useState<boolean>(false);
+  useEffect(() => { }, [lunchRocket]);
 
   return (
 
@@ -38,18 +44,18 @@ export default function Home() {
         </div>
 
         <div className="absolute w-4/12 md:w-3/12 flex justify-center items-center right-[13%] md:right-[35%] top-[20%] md:top-[50%]">
-          <Image className="initialRocketLand rotate-[-35deg]" width={200} height={300} src={rocket} alt={'rocket'} />
+          <Image className={` z-[20] rotate-[-35deg]  ${lunchRocket ? 'lunchRocket' : ''}`} width={200} height={300} src={rocket} alt={'rocket'} />
         </div>
 
         <Atropos
           className="my-atropos atropos-banner absolute z-[10] top-[-110%] md:top-[-100%]  md:h-[100vh]"
           activeOffset={20}
-          shadowScale={0}
+          shadowScale={0.65}
           highlight={false}
         >
-          <div className='absolute lightShadow2x bg-[#12122bc3] font-[Orbit] z-[10] rounded-[5px] flex top-44 md:top-14  bottom-44 md:bottom-14 right-44 md:right-6 left-44 md:left-6 blure bg-gradient-to-tr from-[#02010883] to-[#12093084]'>
-
-            <div className='flex flex-row md:flex-col w-full h-[100%] justify-between '>
+          <div className='absolute lightShadow2x bg-[#12122bd8] font-[Orbit] z-[10] rounded-[5px] flex top-44 md:top-14  bottom-44 md:bottom-14 right-44 md:right-6 left-44 md:left-6 blure bg-gradient-to-tr from-[#02010883] to-[#12093084]'>
+            <Image objectFit="cover" layout="fill" className="z-[1] opacity-[0.2] " src={background} alt={'rocket'} />
+            <div className='flex flex-row md:flex-col w-full h-[100%] justify-between z-[10]'>
               <div className='w-6/12 md:w-full h-[100%]  flex flex-col pt-10 md:pt-5 pl-[5rem] md:pl-0'>
                 <p className='text-[2.5rem] md:text-[2rem] md:pr-5 h-[15%] md:text-right'>Ali Maleki</p>
                 <p className='text-[1.25rem] md:text-[1rem] md:pr-5 md:text-right h-[15%] tracking-wider text-[#a6a6a6cf]'>Front End Developer</p>
@@ -73,11 +79,11 @@ export default function Home() {
 
                 <div className='h-[30%] md:h-[50%] flex flex-row justify-around w-8/12 md:w-10/12 mx-auto'>
                   <div className='flex flex-col w-3/12'>
-                    <button className="btn-class-name outline outline-8 mx-auto outline-[#38156a] boxShadowLight">
+                    <button onClick={() => SetLunchRocket(true)} className="btn-class-name outline outline-8 mx-auto outline-[#38156a] boxShadowLight">
                       <span className="back  bg-gradient-to-r from-[#36166a]  to-[#16196b]"></span>
                       <span className="front bg-gradient-to-r from-[#8647eb]  to-[#5d1995]"></span>
                     </button>
-                    <p className='text-center text-[1rem] md:text-[0.8rem] mt-8 md:mt-5 tracking-wider'>Skills</p>
+                    <p  className='text-center text-[1rem] md:text-[0.8rem] mt-8 md:mt-5 tracking-wider'>Skills</p>
                   </div>
                   <div className='flex flex-col w-3/12'>
                     <button className="btn-class-name outline outline-8 mx-auto outline-[#15196a] boxShadowLight">
@@ -120,7 +126,7 @@ export default function Home() {
 
 
 
-            <div className="planet_wraper planet_shadow">
+            <div className="planet_wraper planet_shadow z-[10]">
               <div className="planet-green">
                 <div className="crater"></div>
                 <div className="crater"></div>
