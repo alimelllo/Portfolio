@@ -1932,7 +1932,7 @@ body {
   height: 15rem;
 }
 
-.planet-green > * {
+.planet-green>* {
   position: relative;
   border-radius: 50%;
   background-color: #209b85;
@@ -2398,9 +2398,11 @@ body {
   body {
     background: linear-gradient(to bottom, #201b46 0%, #020107 100%);
   }
+
   .initialRocketLand {
     animation: linear initialRocketMobile 8s forwards;
   }
+
   .space {
     scale: 0.6;
     top: -15%;
@@ -2411,13 +2413,16 @@ body {
 .my-atropos {
   width: 80%;
 }
-.my-atropos:hover{
+
+.my-atropos:hover {
   z-index: 10 !important;
 }
+
 .atropos-banner {
   width: 100%;
   aspect-ratio: 631/383;
 }
+
 .atropos-banner .atropos-inner {
   border-radius: 10px;
 }
@@ -2429,10 +2434,12 @@ body {
   left: 0;
   top: 0;
 }
+
 .atropos-banner .atropos-shadow {
   filter: blur(50px);
   opacity: 0.5;
 }
+
 .atropos-banner .atropos-highlight {
   z-index: 100;
 }
@@ -2449,7 +2456,7 @@ body {
   align-items: center;
 }
 
-.atropos-cta > * {
+.atropos-cta>* {
   all: unset;
   color: white;
   background-color: rgb(181 61 245);
@@ -2462,7 +2469,7 @@ body {
   transform: translateY(100%);
 }
 
-.atropos-cta > *:hover {
+.atropos-cta>*:hover {
   cursor: pointer;
 }
 
@@ -2474,34 +2481,25 @@ body {
   top: 0%;
 }
 
-.lightShadow2x{
+.lightShadow2x {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
-.lunchRocket{
+.lunchRocket {
+  transition: all 5s ease-out;
   animation: linear lunchRocket 8s forwards;
 }
 
 @keyframes lunchRocket {
   0% {
-    transform: rotate(0) translateY(0rem);
+    transform: rotate(0deg) translateY(0rem);
   }
-  10%{
-    transform: rotate(25deg) translateY(5rem);
-  }
-  20%{
-    transform: rotate(45deg) translateY(10rem);
-  }
-  30%{
+
+  20% {
     transform: rotate(140deg) translateY(-15rem);
   }
-  40%{
-    transform: rotate(150deg) translateY(-20rem);
-  }
-  50%{
-    transform: rotate(160deg) translateY(-30rem);
-  }
+
   100% {
-    transform: rotate(160deg) translateY(-40rem);
+    transform: rotate(180deg) translateX(50rem) translateY(-70rem);
   }
 }
